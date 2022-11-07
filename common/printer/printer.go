@@ -2,7 +2,8 @@ package printer
 
 import "fmt"
 
-func Print(str string) {
+type Printer struct{}
+
+func (*Printer) Print(str string) {
 	fmt.Println(str)
 }
-
